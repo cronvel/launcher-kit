@@ -1,0 +1,8 @@
+
+apps:
+	-	appName: htop
+		type: terminal
+		exe: htop
+	-	appName: calculator
+		exe: gnome-calculator
+

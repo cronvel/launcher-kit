@@ -1,0 +1,43 @@
+{
+  "name": "launcher-kit",
+  "version": "0.1.0",
+  "description": "Toolkit for launching things.",
+  "main": "lib/LauncherKit.js",
+  "engines": {
+    "node": ">=14.15.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+  },
+  "scripts": {
+    "test": "tea-time -R dot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cronvel/launcher-kit.git"
+  },
+  "keywords": [
+    "launcher"
+  ],
+  "author": "Cédric Ronvel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cronvel/launcher-kit/issues"
+  },
+  "config": {
+    "tea-time": {
+      "coverDir": [
+        "lib"
+      ]
+    }
+  },
+  "copyright": {
+    "title": "Launcher Kit",
+    "years": [
+      2022
+    ],
+    "owner": "Cédric Ronvel"
+  }
+}
