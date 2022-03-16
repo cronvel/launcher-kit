@@ -24,21 +24,22 @@
 	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 	SOFTWARE.
 */
+
 "use strict" ;
 
-const MegaLauncher = require( '..' ) ;
+const LauncherKit = require( '..' ) ;
 
 
 
 async function main() {
-	var megaLauncher = new MegaLauncher() ;
-	//megaLauncher.loadConfig( './config.kfg' ) ;
-	await megaLauncher.loadHomeConfig() ;
+	var launcherKit = new LauncherKit() ;
+	await launcherKit.loadConfig( './config.kfg' ) ;
+	//await launcherKit.loadHomeConfig() ;
 	
-	await megaLauncher.launch( 'htop' ) ;
-	await megaLauncher.launch( 'calculator' ) ;
+	await launcherKit.launch( 'htop' ) ;
+	await launcherKit.launch( 'calculator' ) ;
 	
-	process.exit() ;
+	//process.exit() ;
 }
 
 

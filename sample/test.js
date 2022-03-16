@@ -24,28 +24,29 @@
 	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 	SOFTWARE.
 */
+
 "use strict" ;
 
-const MegaLauncher = require( '..' ) ;
+const LauncherKit = require( '..' ) ;
 
 
 
 async function main() {
-	var megaLauncher = new MegaLauncher() ;
+	var launcherKit = new LauncherKit() ;
 	
-	megaLauncher.addApp( {
+	launcherKit.addApp( {
 		name: 'calculator' ,
 		exe: 'gnome-calculator'
 	} ) ;
 
-	megaLauncher.addApp( {
+	launcherKit.addApp( {
 		type: 'terminal' ,
 		name: 'htop' ,
 		exe: 'htop'
 	} ) ;
 	
-	await megaLauncher.launch( 'htop' ) ;
-	await megaLauncher.launch( 'calculator' ) ;
+	await launcherKit.launch( 'htop' ) ;
+	await launcherKit.launch( 'calculator' ) ;
 	
 	process.exit() ;
 }
