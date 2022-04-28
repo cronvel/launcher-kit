@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /*
 	Launcher Kit
 
@@ -26,18 +27,21 @@
 
 "use strict" ;
 
-
-
-const path = require( 'path' ) ;
-const os = require( 'os' ) ;
+const LauncherKit = require( '..' ) ;
 
 
 
-exports.typePerExtension = {
-	exe: 'native'
-} ;
+async function main() {
+	var launcherKit = new LauncherKit() ;
+
+	await launcherKit.initConfigDir() ;
+	await launcherKit.addAppByFile( "C:\\Program Files\\Mozilla Firefox\\firefox.exe" ) ;
+	await launcherKit.launch( 'firefox' ) ;
+	
+	process.exit() ;
+}
 
 
 
-exports.getAppDataDir = appName => path.join( os.homedir() , 'AppData' , 'Local' , appName ) ;
+main() ;
 
