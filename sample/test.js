@@ -41,6 +41,7 @@ async function main() {
 
 	launcherKit.addApp( {
 		type: 'terminal' ,
+		//use: 'gnome-terminal' ,
 		name: 'htop' ,
 		exe: 'htop'
 	} ) ;
