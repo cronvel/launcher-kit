@@ -1,6 +1,6 @@
 {
   "name": "launcher-kit",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Toolkit for launching things.",
   "main": "lib/LauncherKit.js",
   "engines": {
@@ -19,7 +19,7 @@
     "tree-kit": "^0.7.4"
   },
   "optionalDependencies": {
-    "exe-icon-extractor": "^1.0.8"
+    "@cronvel/icon256": "^1.2.7"
   },
   "scripts": {
     "test": "tea-time -R dot"
