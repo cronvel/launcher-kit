@@ -33,7 +33,7 @@ const LauncherKit = require( '..' ) ;
 
 async function main() {
 	var launcherKit = new LauncherKit() ;
-	
+
 	launcherKit.addApp( {
 		name: 'calculator' ,
 		exe: 'gnome-calculator'
@@ -45,9 +45,16 @@ async function main() {
 		name: 'htop' ,
 		exe: 'htop'
 	} ) ;
-	
-	await launcherKit.launch( 'htop' ) ;
-	await launcherKit.launch( 'calculator' ) ;
+
+	launcherKit.addApp( {
+		type: 'shell' ,
+		name: 'hello' ,
+		exe: 'hello.sh'
+	} ) ;
+
+	//await launcherKit.launch( 'htop' ) ;
+	//await launcherKit.launch( 'calculator' ) ;
+	await launcherKit.launch( 'hello' ) ;
 	
 	process.exit() ;
 }
