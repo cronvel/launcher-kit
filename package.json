@@ -1,10 +1,10 @@
 {
   "name": "launcher-kit",
-  "version": "0.1.23",
+  "version": "0.2.0",
   "description": "Toolkit for launching things.",
   "main": "lib/LauncherKit.js",
   "engines": {
-    "node": ">=14.15.0"
+    "node": ">=16.13.0"
   },
   "directories": {
     "test": "test"
