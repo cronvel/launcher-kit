@@ -1,6 +1,6 @@
 {
   "name": "launcher-kit",
-  "version": "0.2.18",
+  "version": "0.2.19",
   "description": "Toolkit for launching things.",
   "main": "lib/LauncherKit.js",
   "engines": {
@@ -12,15 +12,15 @@
   "dependencies": {
     "doormen": "^0.14.5",
     "fs-kit": "^0.6.4",
-    "kung-fig": "^0.62.1",
+    "kung-fig": "^0.63.1",
     "logfella": "^1.4.2",
     "open": "^8.4.0",
     "seventh": "^0.8.0",
-    "string-kit": "^0.17.3",
+    "string-kit": "^0.17.6",
     "tree-kit": "^0.7.4"
   },
   "optionalDependencies": {
-    "@cronvel/icon256": "^1.2.7"
+    "@cronvel/ms-kit": "^0.2.1"
   },
   "scripts": {
     "test": "tea-time -R dot"
