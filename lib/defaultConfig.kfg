@@ -1,5 +1,6 @@
 
 autoUpdateIconTimeout: 
 	day: 1
+
 apps: <Array>
 
