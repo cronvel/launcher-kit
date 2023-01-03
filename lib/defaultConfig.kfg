@@ -2,5 +2,7 @@
 autoUpdateIconTimeout: 
 	day: 1
 
+copyContent: false
+
 apps: <Array>
 
