@@ -1,6 +1,6 @@
 {
   "name": "launcher-kit",
-  "version": "0.3.15",
+  "version": "0.3.16",
   "description": "Toolkit for launching things.",
   "main": "lib/LauncherKit.js",
   "engines": {
