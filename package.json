@@ -21,7 +21,7 @@
     "tree-kit": "^0.7.4"
   },
   "optionalDependencies": {
-    "@cronvel/ms-kit": "^0.3.4"
+    "@cronvel/ms-kit": "^0.3.5"
   },
   "scripts": {
     "test": "tea-time -R dot"
