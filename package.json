@@ -1,6 +1,6 @@
 {
   "name": "launcher-kit",
-  "version": "0.3.20",
+  "version": "0.3.21",
   "description": "Toolkit for launching things.",
   "main": "lib/LauncherKit.js",
   "engines": {
@@ -10,12 +10,13 @@
     "test": "test"
   },
   "dependencies": {
-    "doormen": "^0.14.5",
+    "doormen": "^0.14.6",
     "fs-kit": "^0.6.4",
+    "ini": "^3.0.1",
     "kung-fig": "^0.63.1",
     "logfella": "^1.4.2",
     "open": "^8.4.0",
-    "seventh": "^0.8.0",
+    "seventh": "^0.8.2",
     "shell-quote": "^1.7.4",
     "string-kit": "^0.17.7",
     "tree-kit": "^0.7.4"
