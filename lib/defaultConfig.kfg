@@ -1,8 +1,11 @@
 
 autoUpdateIconTimeout: 
+	_opaque: true
 	day: 1
 
 copyContent: false
 
 apps: <Array>
 
+gui:
+	_extra: true
