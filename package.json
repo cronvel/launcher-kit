@@ -1,6 +1,6 @@
 {
   "name": "launcher-kit",
-  "version": "0.3.35",
+  "version": "0.3.36",
   "description": "Toolkit for launching things.",
   "main": "lib/LauncherKit.js",
   "engines": {
@@ -18,8 +18,8 @@
     "open": "^8.4.2",
     "seventh": "^0.9.2",
     "shell-quote": "^1.8.1",
-    "string-kit": "^0.17.10",
-    "tree-kit": "^0.8.1"
+    "string-kit": "^0.18.0",
+    "tree-kit": "^0.8.5"
   },
   "optionalDependencies": {
     "@cronvel/ms-kit": "^0.3.6"
