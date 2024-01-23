@@ -1,10 +1,10 @@
 {
   "name": "launcher-kit",
-  "version": "0.3.36",
+  "version": "0.3.37",
   "description": "Toolkit for launching things.",
   "main": "lib/LauncherKit.js",
   "engines": {
-    "node": ">=16.13.0"
+    "node": ">=18.0.0"
   },
   "directories": {
     "test": "test"
@@ -15,7 +15,7 @@
     "ini": "^4.1.1",
     "kung-fig": "^0.67.1",
     "logfella": "^2.0.1",
-    "open": "^8.4.2",
+    "open": "^10.0.3",
     "seventh": "^0.9.2",
     "shell-quote": "^1.8.1",
     "string-kit": "^0.18.0",
