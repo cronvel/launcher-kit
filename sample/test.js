@@ -53,8 +53,8 @@ async function main() {
 	} ) ;
 
 	//await launcherKit.launch( 'htop' ) ;
-	//await launcherKit.launch( 'calculator' ) ;
-	await launcherKit.launch( 'hello' ) ;
+	await launcherKit.launch( 'calculator' ) ;
+	//await launcherKit.launch( 'hello' ) ;
 	
 	process.exit() ;
 }

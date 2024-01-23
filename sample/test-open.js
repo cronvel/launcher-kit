@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /*
 	Launcher Kit
 
@@ -26,25 +27,25 @@
 
 "use strict" ;
 
+const LauncherKit = require( '..' ) ;
 
 
-// The module sindresorhus/open is now ESM-only.
 
-var openEsmImportPromise , openEsm ;
+async function main() {
+	var launcherKit = new LauncherKit() ;
 
-async function open( ... args ) {
-	if ( openEsm ) {
-		return openEsm( ... args ) ;
-	}
+	launcherKit.addApp( {
+		name: 'image' ,
+		type: 'content' ,
+		content: '/home/cedric/Pictures/20210801_123408.jpg'
+	} ) ;
 
-	if ( openEsmImportPromise ) {
-		return ( await openEsmImportPromise ).default( ... args ) ;
-	}
-
-	openEsmImportPromise = import( 'open' ) ;
-	openEsm = ( await openEsmImportPromise ).default ;
-	return openEsm( ... args ) ;
+	await launcherKit.launch( 'image' ) ;
+	
+	process.exit() ;
 }
 
-module.exports = open ;
+
+
+main() ;
 
