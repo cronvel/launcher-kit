@@ -40,7 +40,14 @@ async function main() {
 		content: '/home/cedric/Pictures/20210801_123408.jpg'
 	} ) ;
 
-	await launcherKit.launch( 'image' ) ;
+	launcherKit.addApp( {
+		name: 'pdf' ,
+		type: 'content' ,
+		content: '/home/cedric/.local/share/MyFuso/contents-copies/verlet-integration.pdf'
+	} ) ;
+	
+	//await launcherKit.launch( 'image' ) ;
+	await launcherKit.launch( 'pdf' ) ;
 	
 	process.exit() ;
 }
